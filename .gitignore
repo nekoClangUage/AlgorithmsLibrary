@@ -1,0 +1,6 @@
+ALGOLS_Venv
+assets
+report.html
+.pytest_cache
+__pycache__
+*.pyc
