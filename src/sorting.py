@@ -68,10 +68,10 @@ class BubbleSort:
 
             for i in range(arr_len):
                 processes.clear()
-                start_offset = 1 if i % 2 == 0 else 2
+                start_offset = 1 if (i % 2 == 0) else 2
 
                 for j in range(num_processes):
-                    start_index = start_offset + 2 * j
+                    start_index = start_offset + (2 * j)
                     p = mpi.Process(target=pass_worker, args=(shared_list, start_index, step))
                     processes.append(p)
                     p.start()
